@@ -4,7 +4,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
+
 
 
 import org.springframework.stereotype.Service;
@@ -22,6 +23,12 @@ import java.lang.reflect.Type;
 
 @Service
 public class ContactService {
+	
+	
+	public ContactService() {
+	    System.out.println("ContactService constructor called");
+	}
+
 	
 	
 
