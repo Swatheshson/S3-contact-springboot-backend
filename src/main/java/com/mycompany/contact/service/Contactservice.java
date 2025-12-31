@@ -53,7 +53,7 @@ public class ContactService {
     }
     
     //method to save the values in the hashmap object
-    protected void savetohashmapobj(String name,String phno){
+    public void savetohashmapobj(String name,String phno){
     	contacts.put(name, phno);
     	System.out.println("this is the updated hashmap");
     	System.out.println("dlfd");
@@ -61,7 +61,7 @@ public class ContactService {
     	System.out.println("remember to upload the file at last to save your progress");	
     }
     
-    protected Map<String,String> sendcontactstofront(){
+    public Map<String,String> sendcontactstofront(){
     	 
     	return contacts;
     }
